@@ -12,7 +12,8 @@ class ListProductResource extends ResourceCollection
     {
         $result = [
             'success' => true,
-            'data' => $this->collection,
+            // 'data' => $this->collection,
+            'data' => ProductItemResource::collection($this->collection),
         ];
 
         return $result;

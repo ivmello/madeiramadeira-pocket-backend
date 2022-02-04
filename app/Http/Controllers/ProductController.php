@@ -26,6 +26,7 @@ class ProductController extends Controller
             $request->name,
             $request->description,
             $request->price,
+            $request->image,
         );
         return (new StoreProductResource($product))
             ->response()

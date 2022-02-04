@@ -15,6 +15,7 @@ class StoreProductRequest extends RequestHandle
             'name' => 'required',
             'description' => 'required',
             'price' => 'required',
+            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ];
     }
 
